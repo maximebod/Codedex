@@ -1,0 +1,9 @@
+import imageio.v3 as iio
+
+filenames = ['Chadi1.jpg', 'Chadi2.jpg', 'Chadi3.jpg', 'Chadi4.jpg']
+images = [ ]
+
+for filename in filenames:
+  images.append(iio.imread(filename))
+
+iio.imwrite('Chadipeur.gif', images, duration = 400, loop = 0)
