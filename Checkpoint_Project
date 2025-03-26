@@ -1,0 +1,33 @@
+#Area Calculator
+
+from math import pi 
+
+shape = int(input("Welcome to your personal !!!Area Calculator 📐!!! bot. Please select a shape from the following list : 1. Triangle 2. Rectangle 3. Square 4. Circle 5. Quit. Which shape do you choose ?  "))
+
+while shape != 1 and shape!=2 and shape!=3 and shape!=4 and shape !=5: 
+    shape = int(input('You have selected a shape not yet supported by this bot. Enter shape again: '))
+
+if shape == 3 :
+    side = input("Side: ")
+    area = int(side) * int(side)
+    print(f"The area is {area}")
+
+elif shape == 2 :
+    length = input("Length: ")
+    width = input("Width: ")
+    area = int(length) * int(width)
+    print(f"The area is {area}")
+
+elif shape == 1 :
+    height = input("Height: ")
+    base = input("Base: ")
+    area = int(height) * int(base)
+    print(f"The area is {area}")
+
+elif shape == 4 :
+    radius = input("Radius: ")
+    area = int(radius) * int(radius) * pi
+    print(f"The area is {area}")
+
+elif shape == 5 :
+    print('Closing bot...')
